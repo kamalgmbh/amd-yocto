@@ -36,7 +36,7 @@ If you're on Windows,
 vcpkg install sdl2
 ```
 
-## Building Steps
+## Building Steps using Cmake
 
 ```
 git clone git://github.com/kamalgmbh/amd-yocto
@@ -45,3 +45,11 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 cmake --build .
 ./amd-yocto
 ```
+## Building steps using devtool
+devtool add game amd-yocto
+devtool build game
+devtool deploy-target -s -c kamal2 root@10.136.49.82:/
+
+## To create package
+devtool package game
+
