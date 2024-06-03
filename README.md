@@ -46,11 +46,11 @@ vcpkg install sdl2
 building this as easy as possible.
 
 ```
-git clone https://github.com/indianakernick/EnTT-Pacman.git
-cd EnTT-Pacman/build
+git clone git://github.com/kamalgmbh/amd-yocto
+cd amd-yocto
 cmake -DCMAKE_BUILD_TYPE=Release ..
 cmake --build .
-./pacman
+./amd-yocto
 ```
 
 ## It's not exactly the same as the real thing
