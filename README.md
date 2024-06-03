@@ -36,10 +36,7 @@ If you're on Windows,
 vcpkg install sdl2
 ```
 
-## Building
-
-[EnTT](https://github.com/skypjack/entt) is bundled with the project to make
-building this as easy as possible.
+## Building Steps
 
 ```
 git clone git://github.com/kamalgmbh/amd-yocto
