@@ -22,7 +22,7 @@ namespace {
 int getScaleFactor() {
   // Make the largest window possible with an integer scale factor
   SDL_Rect bounds;
-  #if SDL_VERSION_ATLEAST(2, 0, 5)
+  #if SDL_VERSION_ATLEAST(2, 0, 100)
   SDL_CHECK(SDL_GetDisplayUsableBounds(0, &bounds));
   #else
   #warning SDL 2.0.5 or later is recommended
@@ -48,7 +48,7 @@ void Application::run() {
   std::cout << "Using scale factor: " << scaleFactor << '\n';
 
   SDL::Window window{SDL_CHECK(SDL_CreateWindow(
-    "Pacman",
+    "AMD Yocto SDK Demo",
     SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
     tilesPx.x * scaleFactor, tilesPx.y * scaleFactor,
     SDL_WINDOW_SHOWN

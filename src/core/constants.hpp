@@ -51,10 +51,10 @@ constexpr Pos clydeScatter  = { 0, 21};
 
 // The amount of time ghosts will be in scatter mode before switching
 // to chase mode
-constexpr int scatterTicks = 15;
+constexpr int scatterTicks = 1500;
 // The amount of time ghosts will be in chase mode before switching
 // to scatter mode
-constexpr int chaseTicks = 40;
+constexpr int chaseTicks = 4000;
 // The frame rate. The game speed in set as 8 times slower than the frame rate
 constexpr int fps = 20;
 

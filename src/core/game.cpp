@@ -90,10 +90,10 @@ bool Game::logic() {
 
   const GhostCollision collision = playerGhostCollide(reg);
   if (collision.type == GhostCollision::Type::eat) {
-    ghostEaten(reg, collision.ghost);
+   // ghostEaten(reg, collision.ghost);
   }
   if (collision.type == GhostCollision::Type::lose) {
-    state = State::lost;
+   // state = State::lost;
   } else if (dots == dotsInMaze) {
     state = State::won;
   }
